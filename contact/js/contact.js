@@ -31,5 +31,18 @@ window.addEventListener("scroll", () => {
       }
     }, 5000);
 
-    
+    // Obtener una referencia al botón
+var boton = document.getElementById("miBoton");
+
+// Agregar un event listener para el evento de clic
+boton.addEventListener("click", function() {
+    // Obtener el valor del mensaje desde el campo de texto
+    var mensaje = document.getElementById("message").value;
+
+    // Mostrar el mensaje en la consola
+    console.log("Mensaje enviado: " + mensaje);
+});
+
+
+
     
