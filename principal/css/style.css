@@ -1,19 +1,20 @@
-/*======= Google fonts =======*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*======= Main Css =======*/
-*{
+/*Cuerpo de la pagina, parate de enmedio*/
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
-}
+}*/
 
+/*Color del body*/
 body{
-    background: #000116;
+    background: #A8EFD6;
 }
 
-/*======= Header navigation bar =======*/
+/*Barra supedior de menu*/
 header{
     z-index: 999;
     position: fixed;
@@ -22,10 +23,10 @@ header{
 
 header .nav-bar{
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
+    background: #05809F;
     backdrop-filter: blur(20px);
     height: 4em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #05809F;
     top: 0;
     left: 0;
     display: flex;
@@ -36,18 +37,15 @@ header .nav-bar{
 }
 
 
-
+/*Letras de menu*/
 .navigation .nav-items a{
-    color: #fff;
+    color: #A8EFD6;
     font-size: 1em;
     text-decoration: none;
 }
 
 
-
-
-
-/*======= Home =======*/
+/*Contenedor de la presentacion-texto*/
 section{
     position: relative;
     font-size: 1em;
@@ -56,72 +54,79 @@ section{
     transition-property: padding;
 }
 
+/*Parte de presentacion-imagen*/
 .home{
-   
     min-height: 100vh;
-    background: url(https://st2.depositphotos.com/22009996/46661/i/450/depositphotos_466619840-stock-photo-auto-mechanic-set-new-metal.jpg) no-repeat; /* fondo*/
+    background: url(https://media.istockphoto.com/id/1481609175/es/foto/manos-sosteniendo-diferentes-herramientas-de-carpinter%C3%ADa-aisladas-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=y5T1mp-tFg5B_721GI2_F4r-jbHgEY7JLJNtZ0Bk1uo=) no-repeat; /* fondo*/
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
+/*Sombradeo de la parte baja del titulo*/
 .home:before{
     z-index: 888;
     content: '';
     position: absolute;
     width: 100%;
     height: 50px;
-    background: linear-gradient(transparent, #000116);
+    background: linear-gradient(transparent, #A8EFD6);
     bottom: 0;
     left: 0;
 }
 
+/*Titulo Reportmant*/
 .home h1{
-    color: rgba(255, 255, 255, 0.5);
+    color: #05809F;
     font-size: 9em;
     font-weight: 1000px;
 }
 
+/*Titulo de la descripcion*/
 /*======= Content section =======*/
 .content h1{
-    color: #fff;
+    color: #47BAED;
     font-size: 3.5em;
     font-weight: 600;
 }
 
+/*Informacion de la pagina*/
 .content p{
-    color: #fff;
+    color: #786F72;
     font-size: 1em;
     margin: 30px 0;
 }
 
 
-
+/*Barra supedior movible*/
 /*======= Scroll indicator bar =======*/
 .scroll-indicator-container{
     width: 100%;
     height: 5px;
 }
 
+/*Color de la barra*/
 .scroll-indicator-bar{
     background: #199fff;
     width: 0%;
     height: 100%;
-    box-shadow: 0 5px 25px #199fff,
-                0 5px 50px #199fff;
+   /* box-shadow: 0 5px 25px #199fff,
+                0 5px 50px #199fff;*/
 }
 
 .nav-close-btn, .nav-menu-btn{
     display: none;
 }
 
-/*======= Media queries (max-width: 1100px) =======*/
+
+
+
+/*======= Media queries (max-width: 1100px) =======
 @media screen and (max-width: 1100px){
   body {
-    color: #000;
+    
   }
   header .nav-bar{
         padding: 0 50px;
@@ -134,7 +139,8 @@ section{
     }
 }
 
-/*======= Media queries (max-width: 850px) =======*/
+/*======= Media queries (max-width: 850px) =======
+
 @media screen and (max-width: 850px) {
     header .nav-bar {
         padding: 0 20px;
@@ -144,22 +150,23 @@ section{
 
     /*.navigation{
       display: none;
-    }*/
+    }
 
     section {
         padding: 30px 20px;
         font-size: 0.8em;
     }
 
-}
+}*/
 
+/*Tamaño del logo*/
 .logo {
     height: 150px;
   }
 
   
 /* lista desplegable*/
-
+/* 
   .menu {
     display: flex;
     list-style-type: none;
@@ -170,18 +177,17 @@ section{
   .menu li {
     margin-left: 10px;
   }
-  
+  */
   
   
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #0d0927;
-    min-width: 160px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px 0 rgba(25, 12, 214, 0.678);
+    background-color: #4DDFF0;
+    min-width: 120px;
+    border-radius: 8px;
+    /*box-shadow: 0 8px 16px 0 rgba(25, 12, 214, 0.678);*/
   
-    
   }
   
 
@@ -191,13 +197,14 @@ section{
     flex-direction: column;
   }
 
-  /* fin de la lista desplaegable*/
+  /*fin de la lista desplaegable*/
   
 /*narvar*/
+
 .opciones ul li{
     font-size: 15px;
     padding: 10px;
-    color: #fffdfc;
+    /*color: #fffcfd;*/
     font-weight: 700;
     list-style-type: none;
     float: left;
@@ -210,18 +217,17 @@ section{
 
 
 
-/*carrusel*/
+/*carrusel de imajenes*/
 .carrusel{
 
-  
     margin: 25px;
     /*height: 100vh;      espacio estre abajo*/
     display: flex;
     justify-content: center;
    
-   
 }
 
+/*Contenedor de carrucel*/
 .slider{
     width: 800px;
     height: 500px;
@@ -229,6 +235,7 @@ section{
     overflow: hidden;
   }
   
+  /*Funcionamiento del carrucel del inicio al final*/
   .slides{
     width: 500%;
     height: 500px;
@@ -249,7 +256,7 @@ section{
     height: 500px;
   }
   
-  /*navigacion manual*/
+  /*botones de navigacion-manual del carrucel*/
   
   .navigation-manual{
     position: absolute;
@@ -259,8 +266,9 @@ section{
     justify-content: center;
   }
   
+  /*Contorno de los circulos*/
   .manual-btn{
-    border: 2px solid #40D3DC;
+    border: 2px solid #0CD478;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -271,6 +279,7 @@ section{
     margin-right: 40px;
   }
   
+  /*Relleno del botones-circulo*/
   .manual-btn:hover{
     background: #40D3DC;
   }
@@ -308,6 +317,7 @@ section{
     transition: 1s;
   }
   
+  /*Navegacion automativca-botones-circulo*/
   .navigation-auto div:not(:last-child){
     margin-right: 40px;
   }
@@ -330,26 +340,29 @@ section{
      
 
   /*cards*/
+  /*Ubicacion de las cartas, sobrepuestas*/
    .container-i {
     position: relative;
     height: 300px;
     width: 600px;
     top: 60px;
-    left: calc(50% - 300px);
+    left: calc(47% - 300px);
     display: flex;
   }
 
+  /*Color de las direcciones de las cartas*/
   .title li a {
-    color: black;
+    color: #786F72;
 
   }
 
   .card {
+    /*Cuerpo de las cartas*/
     padding: 180px;
     display: flex;
     height: 400px;
     width: 300px;
-    background-color: #645c72;
+    background-color: #91A198;
     border-radius: 20px;
     box-shadow: -1rem 0 3rem #0f0f0f;
     transition: 0.4s ease-out;
@@ -382,12 +395,14 @@ section{
     transition: 0.4s ease-out;
   }
   
+  /*Espacio de desplieque hacia los lados*/
   .card:hover ~ .card {
     position: relative;
-    left: 300px;
+    left: 30px;
     transition: 0.4s ease-out;
   }
   
+  /*Titulo de las cartas*/
   .title {
     color: rgb(255, 255, 255);
     font-weight: 300;
@@ -397,6 +412,7 @@ section{
     list-style: none;
   }
   
+  /*Tamaño de la barra de relleno*/
   .bar {
     position: absolute;
     top: 100px;
@@ -405,12 +421,14 @@ section{
     width: 150px;
   }
   
+  /*Barra para rellenar*/
   .emptybar {
     background-color: #2e3033;
     width: 200%;
     height: 100%;
   }
   
+  /*Relleno de la barra*/
   .filledbar {
     position: absolute;
     top: 0px;
@@ -427,6 +445,7 @@ section{
     transition: 0.4s ease-out;
   }
   
+  /*Circulo en medio de las cartas*/
   .circle {
     position: absolute;
     top: 10px;
@@ -469,7 +488,7 @@ section{
   }
 
 
-  /* cards con iconos*/
+  /* cards con iconos
   .gif-container {
     width: 40%;
     height: 40%;
@@ -480,6 +499,7 @@ section{
 
 }
 
+/*Imagenes de centro de las tarjetas*/
 .gif-container img {
     max-width: 170px;
     max-height: 170px;
@@ -489,10 +509,7 @@ section{
     width:200px;
     top: 150px;
     left : 5px;
-    box-shadow: -2rem 0 4rem rgb(216, 247, 226);
-    
-    
-    
+    box-shadow: -2rem 0 4rem #335958;
   }
 
 
@@ -502,31 +519,36 @@ section{
  /* fooder*/
   @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
+  /*Diseño del icono*/
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
-}
+   }
+
+/*Distancia del fooder hacia el body*/   
 .container-footer{
     width: 100%;
     padding: 40px 30;
-    background: #100347b7;
+    background: #64D8CB;
     margin-top: 170px;
     margin: 0;
     padding: 40px;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-
+   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/*
 .container-footer footer{
     max-width: 1200px;
     margin: auto;
     
-}
+}*/
 
+/*Ubicacion de los iconos*/
 .container-footer footer .redes-footer{
     display: flex;
     justify-content: center;
@@ -535,6 +557,7 @@ section{
     left: 50%;
 }
 
+/*Contenedor de iconos*/
 .container-footer footer .redes-footer .icon-redes-footer{
     font-size: 20px;
     margin: 20px;
@@ -566,19 +589,23 @@ footer .redes-footer .fa-instagram:hover{
     background: linear-gradient(to top right, #fcde30, #e9712a, #d2313b);
     color: #ffffff;
 }
+
+
+/*Linea del footer*/
 .container-footer footer hr{
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: #c0c0c07a;
+    background: #f1f1f1;
     
 }
 
+/*Latras de footer*/
 .container-footer h4{
  
     text-align: center;
     margin-top: 40px;
-    color: #8e8e8e;
+    color: #786F72;
     font-weight: 500;
  
 }
@@ -594,7 +621,7 @@ footer .redes-footer .fa-instagram:hover{
     width: 100%;
     height: 80px;
    
-    background: linear-gradient(transparent, #100347b7);
+    background: linear-gradient(transparent, #64D8CB);
     left: 100px;
  
 }
@@ -608,4 +635,7 @@ footer .redes-footer .fa-instagram:hover{
   height: 200px;
   
 }
+
+
+
 

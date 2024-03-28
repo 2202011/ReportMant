@@ -1,9 +1,10 @@
 /*Formulario*/
+/*
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+}*/
 
 body {
     font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@ body {
 
 .contact-section {
     width: 100%;
-    background-color: #100347b7;
+    background-color: #A8EFD6;
     padding: 2rem;
     text-align: center;
 }
@@ -26,7 +27,7 @@ body {
     margin: 0 100px;
     margin-top: 100px;
     padding: 3rem;
-    border: 1px solid #DDD;
+    border: 1px solid #47BAED;
     border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -100,35 +101,38 @@ body {
 
 
 
-/*Barra de menu*/
+
 /*======= Google fonts =======*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
+/*Cuerpo de la pagina, parate de enmedio*/
+/*======= Main Css =======
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
+}*/
+
+/*Color del body*/
+body{
+    background: #A8EFD6;
 }
 
-body {
-    background: #000116;
-
-}
-
+/*Barra supedior de menu*/
 /*======= Header navigation bar =======*/
-header {
+header{
     z-index: 999;
     position: fixed;
     width: 100%;
 }
 
-header .nav-bar {
+header .nav-bar{
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
+    background: #05809F;
     backdrop-filter: blur(20px);
     height: 4em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #05809F;
     top: 0;
     left: 0;
     display: flex;
@@ -138,107 +142,78 @@ header .nav-bar {
     transition: 0.5s ease;
 }
 
-.navigation .nav-items a {
-    color: #fff;
+
+/*Letras de menu*/
+.navigation .nav-items a{
+    color: #A8EFD6;
     font-size: 1em;
     text-decoration: none;
-}
-
-/*======= Home =======*/
-section {
-    position: relative;
-    font-size: 1em;
-    padding: 30px 150px;
-    transition: 0.5s ease;
-    transition-property: padding;
 }
 
 
 
 /*======= Scroll indicator bar =======*/
-.scroll-indicator-container {
+.scroll-indicator-container{
     width: 100%;
     height: 5px;
 }
 
-.scroll-indicator-bar {
+.scroll-indicator-bar{
     background: #199fff;
     width: 0%;
     height: 100%;
     box-shadow: 0 5px 25px #199fff,
-        0 5px 50px #199fff;
+                0 5px 50px #199fff;
 }
 
-.nav-close-btn,
-.nav-menu-btn {
+.nav-close-btn, .nav-menu-btn{
     display: none;
 }
 
-/*======= Media queries (max-width: 1100px) =======*/
-@media screen and (max-width: 1100px) {
 
-
-    header .nav-bar {
-        padding: 0 50px;
-    }
-
-    section {
-        padding: 30px 50px;
-        font-size: 0.9em;
-    }
-}
-
-/*======= Media queries (max-width: 850px) =======*/
-@media screen and (max-width: 850px) {
-    header .nav-bar {
-        padding: 0 20px;
-    }
-
-    section {
-        padding: 30px 20px;
-        font-size: 0.8em;
-    }
-
-}
 
 .logo {
     height: 150px;
-}
+    
+  }
 
-
+  
 /* lista desplegable*/
-
-.menu {
+/* 
+  .menu {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.menu li {
+  }
+  
+  .menu li {
     margin-left: 10px;
-}
-
-.dropdown-content {
+  }
+  */
+  
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #0d0927;
-    min-width: 160px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px 0 rgba(25, 12, 214, 0.678);
-}
+    background-color: #4DDFF0;
+    min-width: 120px;
+    border-radius: 8px;
+    /*box-shadow: 0 8px 16px 0 rgba(25, 12, 214, 0.678);*/
+  
+  }
+  
 
-
-
-.dropdown:hover .dropdown-content {
+  
+  .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-}
+  }
 
-/* fin de la lista desplaegable*/
-
+  /*fin de la lista desplaegable*/
+  
 /*narvar*/
-.opciones ul li {
+.opciones ul li{
     font-size: 15px;
     padding: 10px;
     color: #fffdfc;
@@ -247,16 +222,15 @@ section {
     float: left;
     margin-left: 55px;
 }
-
-.opciones ul li a:hover {
+.opciones ul li a:hover{
     color: #7b87ce;
 }
 
-/*foteer*/
 
-/* fooder*/
+/*foteer*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
+  /*Diseño del icono*/
 * {
     margin: 0;
     padding: 0;
@@ -268,7 +242,7 @@ section {
 .container-footer {
     width: 100%;
     padding: 40px 30;
-    background: #100347b7;
+    background: #64D8CB;
     margin-top: 170px;
     margin: 0;
     padding: 40px;
@@ -284,6 +258,7 @@ section {
 
 }
 
+/*Ubicacion de los iconos*/
 .container-footer footer .redes-footer {
     display: flex;
     justify-content: center;
@@ -292,6 +267,7 @@ section {
     left: 50%;
 }
 
+/*Contenedor de iconos*/
 .container-footer footer .redes-footer .icon-redes-footer {
     font-size: 20px;
     margin: 20px;
@@ -328,15 +304,14 @@ footer .redes-footer .fa-instagram:hover {
     margin-top: 20px;
     border: none;
     height: 2px;
-    background: #c0c0c07a;
+    background: #f1f1f1;
 
 }
 
 .container-footer h4 {
-
     text-align: center;
     margin-top: 40px;
-    color: #8e8e8e;
+    color: #786F72;
     font-weight: 500;
 
 }
@@ -351,8 +326,7 @@ footer .redes-footer .fa-instagram:hover {
     position: static;
     width: 100%;
     height: 80px;
-
-    background: linear-gradient(transparent, #100347b7);
+    background: linear-gradient(transparent, #64D8CB);
     left: 100px;
 
 }
